@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<ruleset name="TSN">
+	<description>State News Coding Standard.</description>
+	<exclude-pattern>*/tests/*</exclude-pattern>
+	<exclude-pattern>*/media/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/styles/*</exclude-pattern>
+
+	<rule ref="Generic.Files.LineLength">
+	<properties>
+		<property name="lineLimit" value="80"/>
+		<property name="absoluteLineLimit" value="100"/>
+		</properties>
+	</rule>
+
+	<rule ref="Generic">
+		<exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
+		<exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
+		<exclude name="Generic.Formatting.MultipleStatementAlignment"/>
+		<exclude name="Generic.PHP.UpperCaseConstant"/>
+		<exclude name="Generic.Strings.UnnecessaryStringConcat"/>
+		<exclude name="Generic.NamingConventions.ConstructorName" />
+	</rule>
+	
+	<rule ref="PEAR.ControlStructures.MultiLineCondition" />
+	<rule ref="PEAR.Files.IncludingFile" />
+	<rule ref="PEAR.Functions.FunctionCallSignature" />
+	<rule ref="PEAR.Functions.ValidDefaultValue" />
+	<rule ref="PEAR.WhiteSpace.ObjectOperatorIndent" />
+	<rule ref="PEAR.WhiteSpace.ScopeClosingBrace" />
+	<rule ref="PEAR.WhiteSpace.ScopeIndent" />
+	
+	<rule ref="Squiz.Arrays.ArrayBracketSpacing" />
+	<rule ref="Squiz.Classes.LowercaseClassKeywords" />
+</ruleset>
